@@ -24,7 +24,7 @@ import software.amazon.awscdk.services.codedeploy.EcsDeploymentConfig;
 public class Demo {
 
     // This is the account and region for the toolchain
-    private static final String TOOLCHAIN_ACCOUNT = "111111111111";
+    private static final String TOOLCHAIN_ACCOUNT = "742584497250";
     private static final String TOOLCHAIN_REGION = "us-east-1";
     // CodeCommit account is the same as the toolchain account
     public static final String CODECOMMIT_REPO = Constants.APP_NAME;
