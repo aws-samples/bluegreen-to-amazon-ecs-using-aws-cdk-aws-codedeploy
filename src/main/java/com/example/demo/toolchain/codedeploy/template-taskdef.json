@@ -1,0 +1,24 @@
+{
+   "executionRoleArn": "TASK_EXEC_ROLE",   
+   "containerDefinitions": [ 
+      { 
+         "essential": true,
+         "image": "<IMAGE1_NAME>",          
+         "name": "APPLICATION",
+         "portMappings": [ 
+            { 
+               "containerPort": 8080,
+               "hostPort": 8080,
+               "protocol": "tcp"
+            }
+         ]
+      }
+   ],
+   "cpu": "256",
+   "family": "fargate-task-definition",
+   "memory": "512",
+   "networkMode": "awsvpc",
+   "requiresCompatibilities": [ 
+       "FARGATE" 
+    ]
+}
