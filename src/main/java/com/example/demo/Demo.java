@@ -53,10 +53,11 @@ public class Demo {
                         EcsDeploymentConfig.CANARY_10_PERCENT_5_MINUTES,
                         Environment.builder()
                                 .account(Demo.SERVICE_ACCOUNT)
-                                .region(Demo.SERVICE_REGION)
-                                .build())                                                                                                             
+                                .region("us-east-2")
+                                .build())      
                 .build();
 
         app.synth();
     }
 }
+
